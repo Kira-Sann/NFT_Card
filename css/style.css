@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2? family= Outfit:wght@300;400;600 & display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    
+    max-width: 280px;
+    border-radius: 0.6rem
+}
+
+.nft{
+    width: 250px;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nft:hover{
+    transform: scale(1.06);
+}
+
+.descrition{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.descrition h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.descrition h1:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+
+.descrition span{
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    color: hsl(215, 51%, 70%)
+}
+
+.information{
+    margin: 1rem;
+    display: flex;
+}
+
+.box1{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: start;
+}
+
+.box1 img{
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+
+.box1 p{
+    font-size: 0.9rem;
+}
+
+.box2{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+   align-items: flex-end;
+    margin-left:auto ;   
+}
+
+.box2 img{
+    margin-right: 0.3rem;
+}
+
+.box2 p{
+    font-size: 0.9rem;
+}
+
+
+
+.creator{
+    border-top:  solid hsla(215, 52%, 70%, 0.142);
+    padding-top: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.creator img{
+    width: 26px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: hsl(0, 0%, 75%);
+    margin-right: 0.6rem;
+}
+
+.creator p{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8rem;
+}
+
+
+.creator a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+
+.creator a:hover{
+    color: hsl(178, 100%, 50%);;
+}
