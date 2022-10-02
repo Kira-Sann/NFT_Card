@@ -18,20 +18,43 @@ body{
 
 main {
     background-color: hsl(216, 50%, 16%);
-    
-    max-width: 280px;
+    max-width: 300px;
     border-radius: 0.6rem
 }
 
 .nft{
-    width: 250px;
+    position: relative;
+}
+
+.nft-img{
+    width: 270px;
     margin: 1rem;
     border-radius: 0.6rem;
     transition: 0.3s;
     cursor: pointer;
 }
-.nft:hover{
-    transform: scale(1.06);
+
+.overlay{
+    border-radius: 0.6rem;
+    height: 90%;
+    width: 92%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: #008CBA;
+}
+
+.view, .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.nft:hover .overlay {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .descrition{
@@ -63,6 +86,7 @@ main {
 
 .information{
     margin: 1rem;
+
     display: flex;
 }
 
@@ -70,6 +94,7 @@ main {
     color: hsl(178, 100%, 50%);
     display: flex;
     justify-content: start;
+    margin-left: 0.5rem;
 }
 
 .box1 img{
@@ -84,8 +109,9 @@ main {
 .box2{
     color: hsl(215, 51%, 70%);
     display: flex;
-   align-items: flex-end;
-    margin-left:auto ;   
+    align-items: flex-end;
+    margin-left:auto ;
+    margin-right: 0.6rem ;
 }
 
 .box2 img{
